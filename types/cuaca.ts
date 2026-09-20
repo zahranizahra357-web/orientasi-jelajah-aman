@@ -11,3 +11,11 @@ kota: string;
 suhu: number;
 tingkatAQI: TingkatAQI;
 }
+
+// Laporan Udara Latihan Mandiri 2 
+export interface LaporanUdara {
+  kota: string;
+  indeksAQI: number;
+  tingkat: TingkatAQI;
+  diperbaruiPada?: string;
+}
