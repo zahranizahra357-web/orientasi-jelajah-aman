@@ -1,18 +1,26 @@
 // types/cuaca.ts
+
 export interface DataCuaca {
-kota: string;
-suhu: number;
-kelembapan: number;
-catatan?: string;
-}
-export type TingkatAQI = "BAIK" | "SEDANG" | "TIDAK_SEHAT" | "BERBAHAYA";
-export interface WeatherCardProps {
-kota: string;
-suhu: number;
-tingkatAQI: TingkatAQI;
+  kota: string;
+  suhu: number;
+  kelembapan: number;
+  catatan?: string;
 }
 
-// Laporan Udara Latihan Mandiri 2 
+export type TingkatAQI =
+  | "BAIK"
+  | "SEDANG"
+  | "TIDAK_SEHAT"
+  | "BERBAHAYA";
+
+export interface WeatherCardProps {
+  kota: string;
+  suhu: number;
+  tingkatAQI: TingkatAQI;
+  indeksAQI?: number;
+}
+
+// Laporan Udara Latihan Mandiri 2
 export interface LaporanUdara {
   kota: string;
   indeksAQI: number;
